@@ -2,15 +2,7 @@
 //Vamvas Ioannis A.M.: 2943
 
 
-/* server.c
-
-   Sample code of 
-   Assignment L1: Simple multi-threaded key-value server
-   for the course MYY601 Operating Systems, University of Ioannina 
-
-   (c) S. Anastasiadis, G. Kappes 2016
-
-*/
+/* server.c */
 #include <stdbool.h>
 #include <sys/time.h>
 
