@@ -1,8 +1,8 @@
-# Multithreaded-Server , First Assignment in Operating Systems
+# Multithreaded-Server using pthreds and sockets , First Assignment in Operating Systems
 
 Implementation of a multithreaded server that allows multiple users to make requests at the same time. 
 Each user can request access to the database and the request can be PUT or GET.
 The implementation makes use of the reader/writter logic where only one writter can
 modify the database or multiple readers can access it and read data at the same time, as well as the producer/consumer logic to synchronize the incoming requests.
-Also the implementation gives priority to readers. The client code is provided as well.
-Run the server with ./server then in a new terminal do ./client . You can also use CTRL - Z to terminate the server and see the stats.
+Also the implementation gives priority to readers. For the tests , a multithreaded client is used for request feeding .
+Run the server with ./server then in a new terminal do ./client . You can also use the custom signal handler with CTRL-Z to terminate the server and see the stats.
