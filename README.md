@@ -1,4 +1,4 @@
-# Multithreaded-Server using pthreds and sockets , First Assignment in Operating Systems
+# Multithreaded-Server using pthreads and sockets , First Assignment in Operating Systems
 
 Implementation of a multithreaded server that allows multiple users to make requests at the same time. 
 Each user can request access to the database and the request can be PUT or GET.
