@@ -9,4 +9,4 @@ Run the server with ./server then in a new terminal do ./client . You can also u
 
 When a new request arrives a new thread is utilized by the server to serve the request.
 
-![alt text](https://github.com/billgewrgoulas/Multithreaded-Server/blob/main/image.jpg?raw=true)
+![alt text](https://github.com/billgewrgoulas/Multithreaded-Server/blob/main/Multiserver.png?raw=true)
