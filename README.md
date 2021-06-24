@@ -6,3 +6,7 @@ The implementation makes use of the reader/writter logic where only one writter 
 modify the database or multiple readers can access it and read data at the same time, as well as the producer/consumer logic to synchronize the incoming requests.
 Also the implementation gives priority to readers. For the tests , a multithreaded client is used for request feeding .
 Run the server with ./server then in a new terminal do ./client . You can also use the custom signal handler with CTRL-Z to terminate the server and see the stats.
+
+When a new request arrives a new thread is utilized by the server to serve the request.
+
+![alt text](https://github.com/billgewrgoulas/Multithreaded-Server/blob/main/image.jpg?raw=true)
