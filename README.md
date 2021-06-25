@@ -7,7 +7,7 @@ modify the database or multiple readers can access it and read data at the same 
 Also the implementation gives priority to readers. For the tests , a multithreaded client is used for request feeding .
 
 
-When a new request arrives a new thread is utilized by the server to serve the request.
+When a new request arrives a new thread is utilized or reused by the server to serve the request.
 
 ![alt text](https://github.com/billgewrgoulas/Multithreaded-Server/blob/main/Multiserver.png?raw=true)
 
