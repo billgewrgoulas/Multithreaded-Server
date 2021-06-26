@@ -9,7 +9,7 @@ Also the implementation gives priority to readers. For the tests , a multithread
 
 When a new request arrives a new thread is utilized or reused by the server to serve the request.
 
-![alt text](https://github.com/billgewrgoulas/Multithreaded-Server/blob/main/Multiserver.png?raw=true)
+![alt text](https://github.com/billgewrgoulas/Multithreaded-Server/blob/main/des.png?raw=true)
 
 # Usage
 
