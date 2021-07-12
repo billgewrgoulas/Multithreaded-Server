@@ -7,11 +7,11 @@ modify the database or multiple readers can access it and read data at the same 
 Also the implementation gives priority to readers. For the tests , a multithreaded client is used for request feeding .
 
 
-When a new request arrives a new thread is dispatched by the server to serve the request.
+When a new request arrives the producer thread waits for a consumer thread to become available and dispatches it to serve the request.
 
 ![alt text](https://github.com/billgewrgoulas/Multithreaded-Server/blob/main/des.png?raw=true)
 
 # Usage
 
-Run the server with ./server then in a new terminal do ./client . You can also use the custom signal handler with CTRL-Z to terminate the server and see the stats.
-
+Run the server with ./server then in a new terminal do ./client . 
+You can also use the custom signal handler with CTRL-Z to terminate the server and see the stats for various number of consumer threads and queue size.
