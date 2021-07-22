@@ -98,7 +98,7 @@ int main(int argc, char **argv) {
 	int *c = malloc(sizeof(*c));
 	*c = count;
   	pthread_create( &tid[i], NULL, thread_function, c );
-	free(c);
+	//free(c);
   }
   for(j=0;j<NTHREADS;j++){
  	pthread_join(tid[j],NULL);
