@@ -6,7 +6,7 @@ The implementation makes use of the reader/writter logic where only one writter 
 modify the database or multiple readers can access it and read data at the same time, as well as the producer/consumer logic to synchronize the incoming requests. Also the implementation gives priority to readers. For the tests, a multithreaded client is used to establish a TCP Connection over the server and start feeding requests.
 
 
-## Main Flow
+## Explanation
 
 ### Consumers - Producers
 
