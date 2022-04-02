@@ -53,6 +53,12 @@ modify the database or multiple readers can access it and read data at the same 
  * The signal handler is responsible to block the default handler with sigmask and assign a custom method to handle CTRL-Z.
  * When the signal arrives the servers outputs the statistics then awakes and terminates all threads safely using global flag variables and <b>pthread_join()</b>
 
+### DataBase(kissdb)
+
+* For our database we will use [KISSDB](https://github.com/adamierymenko/kissdb) created by Adam Ierymenko. 
+* KISSDB is about the simplest key/value store you'll ever see, anywhere. It's written in plain vanilla C using only the standard string and
+  FILE I/O functions, and should port to just about anything with a disk or something that acts like one.
+
 # Usage
 
 Run the server with ./server then in a new terminal do ./client . 
