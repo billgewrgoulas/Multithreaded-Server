@@ -10,7 +10,7 @@ modify the database or multiple readers can access it and read data at the same 
 
 ### Consumers - Producers
 
- * Producer Thread - Main thread that awaits for requests from a client through a TCP connection. Produces a request descriptor and awaits if the buffer is full or appends it and notifies a consumer thread to process the request.
+ * Producer Thread - Main thread that awaits for requests from a client through a TCP connection. Produces a request descriptor for every incoming request and awaits if the buffer is full or appends it and notifies a consumer thread to serve it acordingly.
  * Consumer Threads - Multiple threads that are responsible for extracting and serving the requests from the buffer in parallel if the buffer is not empty. Depending on the request descriptor a consumer thread can be either a reader or a writter.
  * Buffer - Circular FIFO Queue of finite size. Just like all the global resources it must be protected by mutual exclusion when modified.
 
